@@ -1,2 +1,10 @@
-# kck_django_news
-Simple example of a Django app with news
+# KCK Django news
+
+Prosty przykład aplikacji django.
+
+Aby uruchomić:
+```bash
+pip install django newsapi-python
+python manage.py migrate
+python manage.py runserver
+```
