@@ -17,18 +17,16 @@
     </div>
 
     <div class="container">
-        <!-- Iterate trough news -->
-        {% for single_news in news_list %}
 
-            <img src="{{ single_news.urlToImage }}" alt="">
+        <img src="{{ news_list.0.urlToImage }}" alt="">
 
-            <h1>news:</h1> {{ single_news.title }}
-            {{ value|linebreaks }}
+        <h1>news:</h1> {{ news_list.0.title }}
+        {{ value|linebreaks }}
 
-            <h4>description:</h4>{{ single_news.description }}
-            <hr>
-            {{ value|linebreaks }}
-        {% endfor %}
+        <h4>description:</h4>{{ news_list.0.description }}
+        <hr>
+        {{ value|linebreaks }}
+
     </div>
 
 </body>
